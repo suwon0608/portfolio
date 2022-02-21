@@ -17,6 +17,7 @@ header { position:fixed; top:0; left:0; width:100%; z-index:100; }
 #menu > li > a { line-height:65px;}
 #menu > li > a:hover {font-weight: bold;}
 
+
 main {}
 section { background-size:cover; background-position:center center; }
 #s0 { background-image:url('../img/bg2.jpg'); 
@@ -40,6 +41,7 @@ h1 {
 
 .title h1 { text-align: center; font-size: 80px;}
 .title p {text-align: center; font-size: 20px; letter-spacing: 7px;}
+
 
 
 .image-grid {
@@ -137,13 +139,14 @@ grid-area: 37 / 39 / 48 / 47;
 
 /****home end****/
 
+
 /*About me*/
 .section .wrap_s1{
   position: relative;
   float: left;
   left: 400px;
   top: 40%;
-  height: 650px;
+  height: 690px;
   width: 40%;
   overflow: hidden;
 }
@@ -188,6 +191,17 @@ grid-area: 37 / 39 / 48 / 47;
   border-radius: 40px;
   text-align: center;
 }
+.section .skill .cv a{    
+  color: #fff;
+  font-size: 1vw;
+  line-height: 40px;
+}
+
+.section .skill .cv:hover a{    
+  color: #222;
+  font-size: 1vw;
+  line-height: 40px;
+}
 .section .skill .cv:hover {
 background: #fafaf8;
 border: 1px solid #222;
@@ -198,8 +212,8 @@ transition: 0.3s;
 .section .skill .cv:after {
   content: "";
   position: absolute;
-  left: calc(50% 434px);
-  width: 400px;
+  left: 150px;
+  width: 900px;
   height: 1px;
   background: #222;
   bottom: 20px;
@@ -231,13 +245,13 @@ transition: 0.3s;
     
 }
 
-.section .grayText a{   
+.section .grayText .site a{   
   color: #fff; 
   font-size: 1vw;
   line-height: 40px;
 }
 
-.section .grayText:hover a {
+.section .grayText .site:hover a {
   color: #222;
   transition: 0.3s;
   z-index: 5;
@@ -286,24 +300,35 @@ transition: 0.3s;
 #s5 nav li { 
   float: left; margin: 5px;}
 #s5 nav a {
-  display: block; background: rgb(228, 228, 228); padding: 7px 15px;border-radius: 5px; color: #222; transition: 0.5s;}
+  display: block; 
+  background: rgb(228, 228, 228); 
+  padding: 7px 15px;
+  border-radius: 5px; 
+  color: #222; 
+  transition: 0.5s;}
 #s5 nav a:hover, nav a.on{ 
   color: #fff;}
 
 #s5 .thumb li{
-  float: left;width: 240px; height: 240px; padding: 10px; }
+  float: left;
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; }
 #s5 .thumb a{
-  position: relative; display: inline-block;}
+  position: relative; 
+  display: inline-block;}
 #s5 .thumb a img{
-  width: 100%; border-radius: 20px;}
+  width: 100%; 
+  border-radius: 20px;}
 #s5 .thumb .cover{
-  position: absolute; top: 0;left: 0;
-        width: 100%; height: 100%; background:rgba(0, 0, 0, 0.6);
-        opacity: 0; transition: 0.5s; border-radius: 20px;
+  position: absolute; 
+  top: 0;left: 0;
+  width: 100%; height: 100%; background:rgba(0, 0, 0, 0.6);
+  opacity: 0; transition: 0.5s; border-radius: 20px;
       }
 #s5 .thumb .cover p{
   position: relative; top: 70%; transform: translateY(-50%);
-    text-align: center; color: #fff; font-size: 25px; transition: 0.5s;
+  text-align: center; color: #fff; font-size: 25px; transition: 0.5s;
   }
 
 #s5 .thumb li:hover img{ 
@@ -321,20 +346,30 @@ footer {
   padding:30px 0; 
 }
 footer > div { 
-  width:; margin:auto; height:80px; text-align:right; 
+  margin:auto; height:150px; text-align:right; 
 } 
 footer small{ 
   color:#f3f3f3
 }
 
 
-#s6  .contact { position:relative; width:30%; height:50%; margin:auto; margin-top:80px; text-align:center; }
-#s6  .contact .c_me {  background:#444; border-radius:60px; color:#fafaf8;}
-#s6  .contact span {  font-size:2vw;  font-weight:bold; padding-bottom:50px; }
-
-#s6  .contact .mail { position:absolute; right:0; top:65%; text-align:center; opacity:0.7; }
-#s6  .contact .mail i { width:50px; margin-bottom:30px; }
-
+#s6  .contact { 
+  position:relative; 
+  width:30%; height:30%; 
+  margin:auto; margin-top:20px; 
+  text-align:center; }
+#s6  .contact .c_me {  
+  background:#444; 
+  border-radius:60px; 
+  color:#fafaf8;}
+  
+#s6  .contact .mail { 
+  margin-top:30px; 
+  top:70%; 
+  text-align:center;}
+  #s6  .contact .mail p {
+    font-size: 50px;
+  }
 
 
 

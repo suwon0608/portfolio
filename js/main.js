@@ -1,3 +1,9 @@
+
+function re(){
+    window.location.reload(); //새로고침 F5누른 효과
+}
+
+
 var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
     anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
@@ -26,13 +32,13 @@ $('.thumb').isotope({
 $('.btn_all').click(function(){
     $('.thumb').isotope({ filter: '.all' });
 });
-$('.btn_app').click(function(){
+$('.btn_goods').click(function(){
     $('.thumb').isotope({ filter: '.goods' });
 });
-$('.btn_com').click(function(){
+$('.btn_copy').click(function(){
     $('.thumb').isotope({ filter: '.copy' });
 });
-$('.btn_brand').click(function(){
+$('.btn_etc').click(function(){
     $('.thumb').isotope({ filter: '.etc' });
 });
 
@@ -47,3 +53,10 @@ $(".thumb a").fancybox({
         "close"
     ],     
 });
+
+new WOW().init();
+  $('#fullpage').fullpage({
+    // WOWはスクロールイベントを感知しているので、scrollBar:trueにする必要がある
+    scrollBar:true
+  });
+/*애니메이션 작동 */
