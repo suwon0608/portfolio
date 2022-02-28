@@ -1,16 +1,14 @@
 
-function re(){
-    window.location.reload(); //새로고침 F5누른 효과
-}
-
-
 var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
-    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
-    sectionsColor: ['#E8E8DD', '#E8E8DD', '##E8E8DD','##E8E8DD','#E8E8DD','#E8E8DD'],
+    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7'],
+    sectionsColor: ['#E8E8DD', '#E8E8DD', '##E8E8DD','##E8E8DD','#E8E8DD','#E8E8DD','#E8E8DD'],
     autoScrolling: true,  //스크롤 바를 스크롤 하면 한 페이지씩 넘어감(기본설정)
-    scrollBar:false
+    scrollBar:false,
 });
+
+
+new WOW().init();
 
 var $btn = $('nav li a');
 
@@ -18,7 +16,6 @@ $btn.click(function(){
     $btn.removeClass('on');
     $(this).addClass('on');
 });
-
 
 /* isotope 플러그인 설정 */
 $('.thumb').isotope({
@@ -43,20 +40,10 @@ $('.btn_etc').click(function(){
 });
 
 
-//이미지 갤러리
-$(".thumb a").fancybox({
-    transitionEffect: "tube",  
-    buttons: [
-        "zoom",
-        "share",
-        "slideShow",
-        "close"
-    ],     
-});
-
-new WOW().init();
-  $('#fullpage').fullpage({
-    // WOWはスクロールイベントを感知しているので、scrollBar:trueにする必要がある
-    scrollBar:true
+//썸네일 팝업창 띄우기
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
   });
-/*애니메이션 작동 */
+
+

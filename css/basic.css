@@ -1,7 +1,9 @@
 @charset "UTF-8";
+
 * { margin:0; padding:0; box-sizing:border-box;}
 li { list-style:none; }
 a { text-decoration:none; color:#111}
+
 
 body { font-family: Arial, Helvetica, sans-serif; background:#E8E8DD;
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌏</text></svg>")
@@ -18,12 +20,11 @@ header { position:fixed; top:0; left:0; width:100%; z-index:100; }
 #menu > li > a:hover {font-weight: bold;}
 
 
-main {}
 section { background-size:cover; background-position:center center; }
 #s0 { background-image:url('../img/bg2.jpg'); 
     display: grid;
     place-items: center;
-    overflow-x: hidden;
+    overflow: hidden !important
 }
 h1 {
     font-weight: 400;
@@ -35,7 +36,6 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
     color: #000;
 }
 
@@ -182,7 +182,6 @@ grid-area: 37 / 39 / 48 / 47;
 }
 
 
-
 .section .skill .cv{    
   width: 150px;
   height: 40px;
@@ -242,7 +241,6 @@ transition: 0.3s;
     top: 130px;
     left: 250px;
     padding-right: 35%;
-    
 }
 
 .section .grayText .site a{   
@@ -341,18 +339,6 @@ transition: 0.3s;
   top: 50%;
 }
 
-
-footer { 
-  padding:30px 0; 
-}
-footer > div { 
-  margin:auto; height:150px; text-align:right; 
-} 
-footer small{ 
-  color:#f3f3f3
-}
-
-
 #s6  .contact { 
   position:relative; 
   width:30%; height:30%; 
@@ -372,6 +358,14 @@ footer small{
   }
 
 
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #444444;
+    width: 100%;
+    position: absolute; bottom: 0;
+}
+footer p {color: #fff; font-size: 15px; line-height: 30px; }
 
 
 
