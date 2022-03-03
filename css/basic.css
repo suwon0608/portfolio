@@ -3,6 +3,13 @@
 * { margin:0; padding:0; box-sizing:border-box;}
 li { list-style:none; }
 a { text-decoration:none; color:#111}
+body{
+  -ms-overflow-style: none;
+  }
+  
+::-webkit-scrollbar {
+  display: none;
+}
 
 
 body { font-family: Arial, Helvetica, sans-serif; background:#E8E8DD;
@@ -190,13 +197,13 @@ grid-area: 37 / 39 / 48 / 47;
   border-radius: 40px;
   text-align: center;
 }
-.section .skill .cv a{    
+.section .skill a .cv {    
   color: #fff;
   font-size: 1vw;
   line-height: 40px;
 }
 
-.section .skill .cv:hover a{    
+.section .skill a .cv:hover {    
   color: #222;
   font-size: 1vw;
   line-height: 40px;
@@ -223,7 +230,6 @@ transition: 0.3s;
   position: relative;
   width: 50%;
   float: right;
-  z-index: 5;
   height: 100%;
   overflow: hidden;
 }
@@ -243,16 +249,19 @@ transition: 0.3s;
     padding-right: 35%;
 }
 
-.section .grayText .site a{   
+.section .grayText  a .site{   
   color: #fff; 
   font-size: 1vw;
+  background: #222;
   line-height: 40px;
+  z-index: 10;
 }
 
-.section .grayText .site:hover a {
+.section .grayText a .site:hover{
   color: #222;
   transition: 0.3s;
-  z-index: 5;
+  background: #fafaf8;
+  z-index: 10;
 }
 .section .grayText .site{    
     width: 350px;
@@ -261,24 +270,23 @@ transition: 0.3s;
     margin-top: 60px;
     border-radius: 40px;
     text-align: center;
-    z-index: 5;
 }
 .section .grayText .site:hover {
   background: #fafaf8;
   border: 1px solid #222;
   box-sizing: border-box;
   transition: 0.3s;
-  z-index: 10;
 }
 
 .section .grayText .site:after {
   content: "";
   position: absolute;
-  left: calc(50% - 834px);
-  width: 450px;
+  left: calc(50% - 800px);
+  width: 500px;
   height: 1px;
   background: #222;
   bottom: 20px;
+  z-index: -1;
 }
 
 #s2 h1, #s3 h1, #s4 h1 {

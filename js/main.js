@@ -4,11 +4,8 @@ var myFullpage = new fullpage('#fullpage', {
     anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7'],
     sectionsColor: ['#E8E8DD', '#E8E8DD', '##E8E8DD','##E8E8DD','#E8E8DD','#E8E8DD','#E8E8DD'],
     autoScrolling: true,  //스크롤 바를 스크롤 하면 한 페이지씩 넘어감(기본설정)
-    scrollBar:false,
+    scrollBar:true,
 });
-
-
-new WOW().init();
 
 var $btn = $('nav li a');
 
@@ -45,5 +42,3 @@ lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
   });
-
-
